@@ -1,0 +1,15 @@
+version: "3.1"
+
+services:
+  # soffice:
+  #   image: seguins/soffice
+  #   ports:
+  #     - 8100:8100
+
+  jod:
+    image: eugenmayer/jodconverter:gui
+    ports:
+      - 8080:8080
+    volumes:
+      - ./settings/application.properties:/etc/app/application.properties
+
