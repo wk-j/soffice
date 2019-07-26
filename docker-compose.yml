@@ -11,5 +11,4 @@ services:
     ports:
       - 8080:8080
     volumes:
-      - ./settings/application.properties:/etc/app/application.properties
-
+      - "./settings/application.properties:/etc/app/application.properties"

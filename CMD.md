@@ -1,3 +1,5 @@
+## Command
+
 ```bash
 docker-compose up
 
@@ -15,3 +17,11 @@ unzip jodconverter-cli-4.2.2.zip
     resource/demo.docx a.pdf
 ```
 
+```bash
+docker run \
+    --rm \
+    --entrypoint cat eugenmayer/jodconverter:gui \
+    /etc/app/application.properties > settings/a.properties
+
+docker-compose exec jod bash
+```
